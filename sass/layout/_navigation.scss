@@ -1,0 +1,115 @@
+.navigation {
+    &__nav {
+        font-size: 1.8rem;
+        font-weight: 300;
+        /* background-image: linear-gradient(to right bottom, var(--color-primary), var(--color-primary-dark)); */
+        color: var(--color-white);
+        position: relative;
+    }
+
+    // bottom shadow of nav
+    /* &__nav::after{
+        content: '';
+        position:absolute;
+        display: block;
+        bottom: 0;
+        left: 1%;
+        overflow: visible;
+        width: 98%;
+        background-color: rgba(255, 255, 255, 0);
+        z-index: -1;
+        box-shadow: 0 -.5rem 8px 8px var(--color-primary-shadow);
+    } */
+
+    &__ul {
+        display: grid;
+        //compensation of longer text
+        grid-template-columns: 1.4fr 0.8fr 1.1fr 1.2fr;
+        justify-items: center;
+        align-items: center;
+        list-style: none;
+        //overflow: hidden;
+        height: 10rem;
+        padding-top: 3rem;
+
+        & a {
+            cursor: pointer;
+        }
+
+        & li {
+            display: grid;
+            position: relative;
+            grid-template-columns: 3rem 1fr;
+            column-gap: 1.6rem;
+            z-index: 100;
+        }
+
+        & li .icon {
+            grid-row: 1 / span 2;
+            width: 100%;
+            height: 100%;
+            stroke: currentColor;
+        }
+
+        & li div {
+            transition: all 0.2s;
+        }
+
+        // for shadow of hover
+        & li::before {
+            content: '';
+            position: absolute;
+            height: 0;
+            width: 0;
+            border-radius: 220px;
+            top: 50%;
+            left: 50%;
+            z-index: -10;
+            box-shadow: 0 0 10rem 10rem rgba(255, 255, 255, 0.8);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.5s;
+        }
+
+        // for stretch baseline
+        & li::after {
+            content: '';
+            position: absolute;
+            height: 3px;
+            width: 0;
+            background-color: currentColor;
+            opacity: 0.6;
+            top: 7rem;
+            transition: width 0.3s;
+            overflow: hidden;
+        }
+
+        //-------li hover-------
+        li:hover {
+            color: var(--color-primary-super-dark);
+        }
+
+        li:hover div {
+            transform: translateY(-2px);
+            text-shadow: 0.3rem 0.3rem 0.4rem var(--color-primary-shadow);
+        }
+
+        & li:hover .icon {
+            animation-name: icon-shaking;
+            animation-duration: 1s;
+        }
+
+        & li:hover::before,
+        & li:active::before {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        // underline
+        & li:hover::after,
+        & li:active::after {
+            width: 102%; //a bit longer for the alignment of text
+            background-color: var(--color-primary-super-dark);
+        }
+    }
+}

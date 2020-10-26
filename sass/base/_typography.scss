@@ -1,0 +1,21 @@
+.heading-primary {
+    font-size: 10rem;
+    font-weight: 300;
+    opacity: 0.95;
+    background-image: -webkit-linear-gradient(
+        290deg,
+        var(--color-white),
+        var(--color-primary-light) 70%,
+        var(--color-white) 90%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.heading-sub {
+    font-weight: 500;
+    font-size: 2rem;
+    opacity: 0.9;
+    color: var(--color-grey-dark-1);
+}

@@ -1,0 +1,17 @@
+.designer-road {
+    height: 200vh;
+    background-image: url('../img/star-comp.jpg');
+    background-size: cover;
+    overflow: hidden;
+    background-attachment: fixed;
+
+    &__title {
+        width: 80%;
+        font-size: 8rem;
+        font-weight: 300;
+        margin: 12rem auto 12rem auto;
+        text-align: center;
+        position: relative;
+        color: var(--color-white);
+    }
+}

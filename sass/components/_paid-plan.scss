@@ -1,0 +1,63 @@
+.paid-plan {
+    margin-bottom: 15rem;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 51%;
+        height: 10rem;
+        left: 0;
+        top: 45rem;
+        background-color: var(--color-primary);
+        z-index: -1;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 51%;
+        height: 10rem;
+        right: 0;
+        top: 60rem;
+        background-color: var(--color-card-primary);
+        z-index: -1;
+    }
+
+    &__title {
+        width: 80%;
+        font-size: 8rem;
+        font-weight: 300;
+        margin: 12rem auto 12rem auto;
+        padding: 0 25rem;
+        text-align: center;
+        position: relative;
+        z-index: 10;
+        color: var(--color-grey-dark-2);
+    }
+
+    &__title::after {
+        content: '';
+        height: 8px;
+        width: 80%;
+        position: absolute;
+        bottom: 6rem;
+        left: 10%;
+        z-index: -1;
+        background: linear-gradient(
+            to left,
+            var(--color-grey-light-4),
+            var(--color-grey-light-3) 35%,
+            var(--color-grey-light-3) 65%,
+            var(--color-grey-light-4) 100%
+        );
+        border-radius: 20px;
+    }
+
+    &__card-container {
+        width: 60%;
+        display: flex;
+        margin: auto;
+        justify-content: space-around;
+    }
+}

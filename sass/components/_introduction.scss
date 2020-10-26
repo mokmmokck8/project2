@@ -1,0 +1,106 @@
+.introduction {
+    display: grid;
+    grid-template-rows: repeat(2, minmax(min-content, 1fr));
+    gap: 8rem;
+    grid-gap: 8rem;
+    width: 70%;
+    position: relative;
+    z-index: 100;
+    margin: auto;
+
+    &__section {
+        display: grid;
+        justify-content: space-around;
+        grid-template-columns: repeat(2, minmax(30rem, 50rem));
+        align-items: center;
+    }
+
+    &__section:last-child {
+        margin-bottom: 24rem;
+    }
+
+    &__section:nth-child(odd) &__text {
+        order: -1;
+    }
+    // one slide image
+    &__img-container {
+        width: 50rem;
+        height: 40rem;
+        position: relative;
+        background: url('../img/project1-comp.jpg');
+        background-size: 100% auto;
+        transition: background-position 0.5s ease-in-out;
+    }
+
+    &__img-container:hover {
+        background-position: 0 100%;
+    }
+    //decoration of one slide image (square)
+    &__img-container::before {
+        content: '';
+        width: 50rem;
+        height: 40rem;
+        position: absolute;
+        top: -5rem;
+        left: -5rem;
+        border: 10px solid #fff;
+        opacity: 0.9;
+        z-index: -1;
+    }
+
+    // three image style
+    & img {
+        width: 35rem;
+    }
+
+    &__img {
+        position: relative;
+
+        &-1 {
+            position: relative;
+            left: 0;
+            top: 0;
+            z-index: 100;
+            transform: rotate(-4deg);
+        }
+        &-2 {
+            position: absolute;
+            left: -18rem;
+            top: 10rem;
+            z-index: 1000;
+            transform: rotate(-10deg);
+        }
+        &-3 {
+            position: absolute;
+            left: 18rem;
+            top: 10rem;
+            z-index: 1;
+            transform: rotate(4deg);
+        }
+
+        & img:hover {
+            transform: scale(1.1);
+            box-shadow: 1px 1px 5px 5px var(--color-primary-shadow);
+            z-index: 9999;
+            transition: all 0.5s;
+        }
+    }
+
+    //text
+    &__text {
+        max-width: 50rem;
+    }
+
+    &__title {
+        width: 50rem;
+        font-size: 6rem;
+    }
+
+    &__paragraph {
+        margin-top: 2rem;
+        font-size: 1.8rem;
+        line-height: 3.8rem;
+        letter-spacing: 1px;
+        color: var(--color-grey-dark-1);
+    }
+}

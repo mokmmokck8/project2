@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Starshooter Web Design</title>
+        <!--font family-->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <!--JQuery-->
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.min.js"
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+            crossorigin="anonymous"
+        ></script>
+        <!--my style css-->
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body>
+        <div class="row main-page">
+            <header>
+                <nav class="navigation__nav">
+                    <ul class="navigation__ul">
+                        <a id="toPD">
+                            <li>
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#basic_elaboration_todolist_2"></use>
+                                </svg>
+                                <div>產品介紹</div>
+                                <div>Product Description</div>
+                            </li>
+                        </a>
+                        <a id="toPP">
+                            <li>
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#ecommerce_cart"></use>
+                                </svg>
+                                <div>付費方案</div>
+                                <div>Paid plan</div>
+                            </li>
+                        </a>
+                        <a id="toDR">
+                            <li>
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#basic_postcard"></use>
+                                </svg>
+                                <div>設計之路</div>
+                                <div>The road of designer</div>
+                            </li>
+                        </a>
+                        <a herf="#">
+                            <li>
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#basic_message"></use>
+                                </svg>
+                                <div>聯略我們</div>
+                                <div>Contact us</div>
+                            </li>
+                        </a>
+                    </ul>
+                </nav>
+                <section class="hero">
+                    <h1 class="heading-primary">夢想，在此刻起步</h1>
+                    <h2 class="heading-sub">踏出創業的第一步</h2>
+                </section>
+                <footer>
+                    <div class="main-page-footer">
+                        <div class="main-page-footer__licence">
+                            Leo Mok &nbsp; ©2020 All rights reserved.
+                        </div>
+                        <div>
+                            素材支援
+                        </div>
+                        <div class="main-page-footer__supporter">
+                            <div class="main-page-footer__supporter-text">
+                                <a href="https://linea.io/" target="_blank">Linea icons</a>
+                                <a href="https://www.pexels.com/zh-tw/" target="_blank">Pixels</a>
+                                <a href="https://google.github.io/material-design-icons/" target="_blank"
+                                    >Material icons</a
+                                >
+                            </div>
+                            <div>
+                                <svg class="main-page-footer__icon">
+                                    <use xlink:href="img/sprite.svg#arrows_question"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <a herf="#main-page"></a>
+                </footer>
+            </header>
+        </div>
+        <section class="product-description">
+            <div class="product-description__container">
+                <div class="product-description__title">產品介紹</div>
+                <div class="introduction">
+                    <div class="introduction__section">
+                        <div class="introduction__img-container img-slide">
+                            <!--<img src="img/project1-comp.jpg" alt="computer1" />-->
+                        </div>
+                        <div class="introduction__text">
+                            <div class="introduction__title">靜態網頁</div>
+                            <p class="introduction__paragraph">
+                                用於推廣品牌產品或介紹餐廳等的網頁，不具有登入系統及交易系統，網頁設計著重在美感與品牌的配搭上，開發時長約3-8週，適合推廣型之客戶使用
+                            </p>
+                        </div>
+                    </div>
+                    <div class="introduction__section">
+                        <div class="introduction__img">
+                            <img src="img/dynamic1-small-comp.jpg" alt="computer1" class="introduction__img-1" />
+                            <img src="img/login.PNG" alt="computer1" class="introduction__img-2" />
+                            <img src="img/computer1-comp.jpg" alt="computer1" class="introduction__img-3" />
+                        </div>
+                        <div class="introduction__text">
+                            <div class="introduction__title">動態網頁</div>
+                            <p class="introduction__paragraph">
+                                為可讓使用者網頁訂購產品的網頁，具有登入系統及交易系統，能夠顯示商品的狀態及讓用家登記網上交易，具有高可維護性，網頁設計著重在人性化及具美感的使用者介面上，開發時長因應品牌的規模，一般大於8週，適合需要網購功能的客戶使用
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="paid-plan">
+            <div class="paid-plan__title">付費方案</div>
+            <div class="paid-plan__card-container">
+                <div class="card">
+                    <div class="card__title">靜態網頁</div>
+                    <div class="card__full-price">
+                        <span class="card__currency">NT</span><span class="card__price">3000</span>
+                    </div>
+                    <ul class="card__items">
+                        <li class="card__items-true">RWD網頁設計</li>
+                        <li class="card__items-true">開發時間快</li>
+                        <li class="card__items-true">高質感品牌風格設計</li>
+                        <li class="card__items-false">架設購物平台</li>
+                        <li class="card__items-false">付費及物流系統</li>
+                        <li class="card__items-false">登入系統</li>
+                        <li class="card__items-false">自定義加入新產品及頁面</li>
+                    </ul>
+                    <div class="card__markdown">
+                        <div class="card__markdown-title">限時免費!</div>
+                        <div>請洽<a href="mailto:mokokkokmo@gmail.com">mokokkokmo@gmail.com</a></div>
+                    </div>
+                </div>
+                <div class="card redtheme">
+                    <div class="card__title redtheme">動態網頁</div>
+                    <div class="card__full-price redtheme">
+                        <span class="card__currency">NT</span><span class="card__price">9800</span>
+                    </div>
+                    <ul class="card__items redtheme">
+                        <li class="card__items-true">RWD網頁設計</li>
+                        <li class="card__items-false">開發時間慢</li>
+                        <li class="card__items-true">客製化品牌風格設計</li>
+                        <li class="card__items-true">架設購物平台</li>
+                        <li class="card__items-true">付費及物流系統</li>
+                        <li class="card__items-true">登入系統</li>
+                        <li class="card__items-true">自定義加入新產品及頁面</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="designer-road">
+            <div class="designer-road__title">設計師之路</div>
+        </section>
+        <script src="js/script.js" type="text/javascript"></script>
+    </body>
+</html>

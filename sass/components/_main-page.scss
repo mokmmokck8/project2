@@ -1,0 +1,7 @@
+.main-page {
+    height: 100vh;
+    background-image: $bg-filter, url('../img/sky-small-cut-comp.jpg');
+    background-size: cover;
+    overflow: hidden;
+    background-attachment: fixed;
+}
